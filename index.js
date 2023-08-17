@@ -4,4 +4,4 @@ const app = express()
 
 app.get('/', (req, res) => res.json({hello: "world"}))
 
-app.listen(12345, '0.0.0.0', () => console.log('ready'))
+app.listen({port: 12345, host: '0.0.0.0'}, () => console.log('ready'))
